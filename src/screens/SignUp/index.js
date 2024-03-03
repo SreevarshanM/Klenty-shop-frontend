@@ -12,7 +12,7 @@ function Index() {
   const [loading, setLoading] = useState(false);
 
   const _handleSubmit = useCallback(async () => {
-    if (!email || !password || fullName) {
+    if (!email || !password || !fullName) {
       alert.error("Enter all input !");
       return;
     }
