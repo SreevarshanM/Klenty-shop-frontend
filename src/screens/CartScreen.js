@@ -38,6 +38,7 @@ const CartScreen = () => {
 
   const handleProceedBtn = () => {
     alert.success("Sucessfully checked out");
+    dispatch({ type: "EMPTY_CART" });
   };
 
   if (loginInfo.loading)
